@@ -29,11 +29,11 @@ Indeed, the simplification of routine processes is one of the key programming ta
     Returns a new Person instance with name and surname [<em>first_name</em>, <em>last_name</em>], date of birth - <em>birth_date</em> (in 'dd.mm.yyyy' format), current job - <em>job</em>, number of working years - <em>working_years</em>, average salary - <em>salary</em> (per month), current country and city - [<em>country</em>, <em>city</em>] and gender - <em>gender</em>. Parameter gender could be 'male' or 'female'. If this parameter is undefined, the default value is - 'unknown'.
 </p>
 
-<pre class="example">
->>>Person(‘John’, ‘Smith’, ‘19.09.1979’, ‘welder’, 15, 3600, ‘Canada’, ‘Vancouver’, ‘male’)
+<pre class="brush: python">
+Person(‘John’, ‘Smith’, ‘19.09.1979’, ‘welder’, 15, 3600, ‘Canada’, ‘Vancouver’, ‘male’) ==
 Person(‘John’, ‘Smith’, ‘19.09.1979’, ‘welder’, 15, 3600, ‘Canada’, ‘Vancouver’, ‘male’)
 
->>>Person(‘Hanna Rose’, ‘May’, ‘05.12.1995’, ‘designer’, 2.2, 2150, ‘Austria’, ‘Vienna’)
+Person(‘Hanna Rose’, ‘May’, ‘05.12.1995’, ‘designer’, 2.2, 2150, ‘Austria’, ‘Vienna’) ==
 Person(‘Hanna Rose’, ‘May’, ‘05.12.1995’, ‘designer’, 2.2, 2150, ‘Austria’, ‘Vienna’, ‘unknown’)
 </pre>
 <br>
@@ -43,9 +43,8 @@ Person(‘Hanna Rose’, ‘May’, ‘05.12.1995’, ‘designer’, 2.2, 2150,
 <p class="indent">
     Returns full name (name and surname, splitted by whitespace).
 </p>
-<pre class="example">
->>>Person (‘John’, ‘Smith’, ‘19.09.1979’, ‘welder’, 15, 3600, ‘Canada’, ‘Vancouver’, ‘male’).name()
-‘John Smith’
+<pre class="brush: python">
+Person (‘John’, ‘Smith’, ‘19.09.1979’, ‘welder’, 15, 3600, ‘Canada’, ‘Vancouver’, ‘male’).name() == ‘John Smith’
 </pre>
 <br>
 <p>
@@ -54,9 +53,8 @@ Person(‘Hanna Rose’, ‘May’, ‘05.12.1995’, ‘designer’, 2.2, 2150,
 <p class="indent">
     Returns the age of the Person - the number of full lived years. (The current day is 01.01.2018)
 </p>
-<pre class="example">
->>>Person (‘John’, ‘Smith’, ‘19.09.1979’, ‘welder’, 15, 3600, ‘Canada’, ‘Vancouver’, ‘male’).age()
-38
+<pre class="brush: python">
+Person (‘John’, ‘Smith’, ‘19.09.1979’, ‘welder’, 15, 3600, ‘Canada’, ‘Vancouver’, ‘male’).age() == 38
 </pre>
 <br>
 <p>
@@ -68,9 +66,8 @@ Person(‘Hanna Rose’, ‘May’, ‘05.12.1995’, ‘designer’, 2.2, 2150,
 ‘She is a ...’ (if female)
 ‘Is a ...’ (if unknown)
 </p>
-<pre class="example">
->>>Person (‘Hanna Rose’, ‘May’, ‘05.12.1995’, ‘designer’, 2.2, 2150, ‘Austria’, ‘Vienna’).work()
-‘Is a designer’
+<pre class="brush: python">
+Person (‘Hanna Rose’, ‘May’, ‘05.12.1995’, ‘designer’, 2.2, 2150, ‘Austria’, ‘Vienna’).work() == ‘Is a designer’
 </pre>
 <br>
 
@@ -82,9 +79,8 @@ Person(‘Hanna Rose’, ‘May’, ‘05.12.1995’, ‘designer’, 2.2, 2150,
 ‘10 568’
 ‘1 051 422’
 </p>
-<pre class="example">
->>>Person (‘John’, ‘Smith’, ‘19.09.1979’, ‘welder’, 15, 3600, ‘Canada’, ‘Vancouver’, ‘male’).money()
-‘648 000’
+<pre class="brush: python">
+Person (‘John’, ‘Smith’, ‘19.09.1979’, ‘welder’, 15, 3600, ‘Canada’, ‘Vancouver’, ‘male’).money() == ‘648 000’
 </pre>
 <br>
 
@@ -95,9 +91,8 @@ Person(‘Hanna Rose’, ‘May’, ‘05.12.1995’, ‘designer’, 2.2, 2150,
     Returns the country and the city where Person lives in:
 ‘Lives in city, country’
 </p>
-<pre class="example">
->>>Person (‘Hanna Rose’, ‘May’, ‘05.12.1995’, ‘designer’, 2.2, 2150, ‘Austria’, ‘Vienna’).home()
-‘Lives in Vienna, Austria’
+<pre class="brush: python">
+Person (‘Hanna Rose’, ‘May’, ‘05.12.1995’, ‘designer’, 2.2, 2150, ‘Austria’, ‘Vienna’).home() == ‘Lives in Vienna, Austria’
 </pre>
 <br>
 
