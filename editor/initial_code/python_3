@@ -2,21 +2,6 @@ class Person:
     def __init__(self, first_name, last_name, birth_date, job, working_years, salary, country, city, gender='unknown'):
         raise NotImplementedError
 
-    def name(self):
-        raise NotImplementedError
-
-    def age(self):
-        raise NotImplementedError
-
-    def work(self):
-        raise NotImplementedError
-
-    def money(self):
-        raise NotImplementedError
-
-    def home(self):
-        raise NotImplementedError
-
 
 if __name__ == '__main__':
     #These "asserts" using only for self-checking and not necessary for auto-testing
