@@ -19,14 +19,14 @@ Indeed, the simplification of routine processes is one of the key programming ta
 </p>
 
 <p>
-    You have to create class Person, and also a few methods for work with it's instances. See the class description below.
+    You have to create a class ‘Person’ and a few methods to work with its instances. See the class description below.
 </p>
 
 <p>
     <em>class</em> <strong>Person</strong><em>(first_name, last_name, birth_date, job, working_years, salary, country, city, gender='unknown')</em>
 </p>
 <p class="indent">
-    Returns a new Person instance with name and surname [<em>first_name</em>, <em>last_name</em>], date of birth - <em>birth_date</em> (in 'dd.mm.yyyy' format), current job - <em>job</em>, number of working years - <em>working_years</em>, average salary - <em>salary</em> (per month), current country and city - [<em>country</em>, <em>city</em>] and gender - <em>gender</em>. Parameter gender could be 'male' or 'female'. If this parameter is undefined, the default value is - 'unknown'.
+    It returns a new instance  of the ‘Person’ class  with the name and surname [<em>first_name</em>, <em>last_name</em>], date of birth - <em>birth_date</em> (in 'dd.mm.yyyy' format), current job - <em>job</em>, number of working years - <em>working_years</em>, average salary - <em>salary</em> (per month), current country and city - [<em>country</em>, <em>city</em>] and gender - <em>gender</em>. The gender parameter could be 'male' or 'female'. If this parameter is undefined, the default value is - 'unknown'.
 </p>
 
 <pre class="brush: python">
@@ -41,7 +41,7 @@ Person(‘Hanna Rose’, ‘May’, ‘05.12.1995’, ‘designer’, 2.2, 2150,
     <strong>name</strong>()
 </p>
 <p class="indent">
-    Returns full name (name and surname, splitted by whitespace).
+    Returns the full name (name and surname, separated by a whitespace).
 </p>
 <pre class="brush: python">
 Person (‘John’, ‘Smith’, ‘19.09.1979’, ‘welder’, 15, 3600, ‘Canada’, ‘Vancouver’, ‘male’).name() == ‘John Smith’
@@ -51,7 +51,7 @@ Person (‘John’, ‘Smith’, ‘19.09.1979’, ‘welder’, 15, 3600, ‘Ca
     <strong>age</strong>()
 </p>
 <p class="indent">
-    Returns the age of the Person - the number of full lived years. (The current day is 01.01.2018)
+    Returns the person’s age - the number of fully lived years. (The current date is 01.01.2018)
 </p>
 <pre class="brush: python">
 Person (‘John’, ‘Smith’, ‘19.09.1979’, ‘welder’, 15, 3600, ‘Canada’, ‘Vancouver’, ‘male’).age() == 38
@@ -61,7 +61,7 @@ Person (‘John’, ‘Smith’, ‘19.09.1979’, ‘welder’, 15, 3600, ‘Ca
     <strong>work</strong>()
 </p>
 <p class="indent">
-    Returns the job of the Person in the sentence like that:
+    Returns the person’s job in a sentence as follows:
 ‘He is a ...’ (if male)
 ‘She is a ...’ (if female)
 ‘Is a ...’ (if unknown)
@@ -75,7 +75,7 @@ Person (‘Hanna Rose’, ‘May’, ‘05.12.1995’, ‘designer’, 2.2, 2150
     <strong>money</strong>()
 </p>
 <p class="indent">
-    Returns an amount of all money, earned by all period of working years. It should be returned in format xx xxx … - every 3 decimal places should be splitted by whitespace. For example:
+    Returns an amount of money, earned during the working years. It should be returned in format xx xxx … - every 3 decimal places should be separated by a whitespace. For example:
 ‘10 568’
 ‘1 051 422’
 </p>
@@ -88,8 +88,8 @@ Person (‘John’, ‘Smith’, ‘19.09.1979’, ‘welder’, 15, 3600, ‘Ca
     <strong>home</strong>()
 </p>
 <p class="indent">
-    Returns the country and the city where Person lives in:
-‘Lives in city, country’
+    Returns the country and the city where a person lives:
+‘Lives in the city, country’
 </p>
 <pre class="brush: python">
 Person (‘Hanna Rose’, ‘May’, ‘05.12.1995’, ‘designer’, 2.2, 2150, ‘Austria’, ‘Vienna’).home() == ‘Lives in Vienna, Austria’
@@ -98,24 +98,24 @@ Person (‘Hanna Rose’, ‘May’, ‘05.12.1995’, ‘designer’, 2.2, 2150
 
 
 <p>
-    In this mission all data will be correct and you don't need to implement value checking.
+    In this mission all data will be correct and you won't need to implement the value checking.
 </p>
 
 <p>
-    <strong>Input: </strong>Statements and expression with the Person class.
+    <strong>Input: </strong>Statements and expressions that use the ‘Person’ class.
 </p>
 
 <p>
-    <strong>Output: </strong> The behaviour as described.
+    <strong>Output: </strong> The behaviour of an instance as described above.
 </p>
 
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    Work with classes and object-oriented programming - is a high level which you should learn for using full benefits of Python.
+    Work with classes and object-oriented programming is considered to be on a much higher skill level which you should reach in order to put Python to full use.
 </p>
 
 <p>
     <strong>Precondition:</strong>
-    All data are correct.
+    All data is correct.
 </p>
